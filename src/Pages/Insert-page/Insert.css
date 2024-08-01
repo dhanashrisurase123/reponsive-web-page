@@ -1,0 +1,117 @@
+.dashboard{
+  background-color: rgb(238, 238, 239);
+padding-bottom: 20px;
+}
+.add-project {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 165vh;
+  margin-left: 30px;
+  margin-top: -50px;
+  position: relative; 
+  padding-bottom: 85px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.save-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0d4f96;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.project-name-group {
+  max-width: 300px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.field {
+  display: flex;
+  gap: 20px;
+}
+
+.field .form-group {
+  flex: 1;
+}
+
+
+
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+  .add-project {
+    margin-left: 85vh; /* Remove margin-left on mobile */
+    margin-top: 20px; /* Adjust margin-top for mobile */
+    max-width: 55%; /* Ensure full width on mobile */
+    height: 200vh;
+    box-shadow: none;
+  }
+
+  .header {
+    flex-direction: column; /* Stack header elements vertically on mobile */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .header h2 {
+    font-size: 30px; /* Adjust font size for mobile */
+  }
+
+  .save-button {
+    font-size: 20px; /* Adjust font size for mobile */
+    margin: auto;
+    
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 20px; /* Adjust font size for inputs and selects on mobile */
+    color: #a49f9f;
+  }
+  .form-group label{
+    font-size: 30px; 
+  }
+
+  .field {
+    display: block; /* Ensure fields stack vertically */
+    gap: 10px; /* Adjust gap between fields on mobile */
+  }
+}

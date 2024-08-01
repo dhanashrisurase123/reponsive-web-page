@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "email": "dhanashri@gmail.com",
+      "Pass": "Dhanashri123"
+    },
+    {
+      "email": "ruti@gmail.com",
+      "Pass": "r"
+    }
+  ],
+
+  "projectStats": [
+    {
+      "department": "STR",
+      "total_projects": 19,
+      "closed_projects": 14,
+      "success_percentage": 91
+    },
+    {
+      "department": "FIN",
+      "total_projects": 7,
+      "closed_projects": 6,
+      "success_percentage": 97
+    },
+    {
+      "department": "QLT",
+      "total_projects": 9,
+      "closed_projects": 8,
+      "success_percentage": 92
+    },
+    {
+      "department": "MAN",
+      "total_projects": 15,
+      "closed_projects": 15,
+      "success_percentage": 100
+    },
+    {
+      "department": "STO",
+      "total_projects": 5,
+      "closed_projects": 5,
+      "success_percentage": 100
+    },
+    {
+      "department": "HR",
+      "total_projects": 10,
+      "closed_projects": 9,
+      "success_percentage": 91
+    }
+  ]
+}

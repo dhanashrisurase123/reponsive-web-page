@@ -1,0 +1,185 @@
+ .dashboard {
+  background-color: rgb(238, 238, 239);
+  padding-bottom: 50px;
+}
+.list-page {
+  max-width: 170vh;
+  color: black;
+  padding: 20px;
+  margin-top: -50px;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  margin-left: 30px;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.project-table th,
+.project-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.project-table th:first-child,
+.project-table td:first-child {
+  border-left: none;
+}
+
+.project-table th:last-child,
+.project-table td:last-child {
+  border-right: none;
+}
+
+.project-name {
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+}
+
+.project-dates {
+  font-size: 12px;
+  color: #666;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.start-button,
+.close-button,
+.cancel-button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #2268b1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.start-button:hover,
+.close-button:hover,
+.cancel-button:hover {
+  background-color: #0056b3;
+}
+
+.project-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.pagination {
+  text-align: center;
+  padding: 10px;
+  size: 20px;
+}
+
+ 
+
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+  .list-page {
+    margin-left: 85vh; 
+    padding: 20px; 
+    height: 192vh; 
+    margin-top: 10px;
+  }
+
+  .project-table td {
+    border: none;
+  }
+
+  .project-table tr {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    display: table; 
+    table-layout: fixed; 
+  }
+
+  .project-table,
+  .project-table th,
+  .project-table td {
+    display: block;
+    padding: 30px;
+    font-size: 20px;
+  }
+
+  .project-table th,
+  .project-table td {
+    padding: 6px;
+  }
+
+  .project-table th {
+    display: none; /* Hide headers in table */
+  }
+
+  .project-table td {
+    position: relative; /* Ensure proper positioning for ::before */
+    padding-left: 40%; /* Adjust for enough space for labels */
+   
+  }
+
+  .project-table td::before {
+    content: attr(data-label); /* Use the data-label attribute */
+    position: absolute; /* Position it absolutely */
+    left: 100px; /* Adjust as needed */
+    top: 8px; /* Adjust as needed */
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text wrap */
+    font-size: 20px;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .start-button,
+  .close-button,
+  .cancel-button {
+    font-size: 14px;
+    margin-right: 10px;
+    margin: 10px;
+  }
+
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .pagination button {
+    margin: 2px;
+  }
+
+  .project-block {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .search-container {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+}

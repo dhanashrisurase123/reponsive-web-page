@@ -1,0 +1,53 @@
+.navbar {
+  position: relative;
+  margin-left: 10vh;
+}
+
+.navbar-content {
+  position: relative;
+}
+
+.navbar-bg {
+  width: 200vh;
+  height: 150px;
+  object-fit: cover;
+
+  border-bottom-left-radius: 80px;
+}
+
+.navbar-logo {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: auto;
+}
+.navbar-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  top: -100px;
+  line-height: 1;
+  margin-left: 50px;
+}
+
+
+
+@media (max-width: 768px) {
+ 
+  .navbar-logo {
+    display: none; /* Hide logo on mobile */
+  }
+  .navbar-text {
+    font-size: 30px; /* Adjust font size for mobile */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center text */
+   
+    text-align: center; /* Center text */
+    
+  }
+}

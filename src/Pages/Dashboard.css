@@ -1,0 +1,91 @@
+.dashboard {
+  background-color: rgb(231, 242, 253);
+  margin-left: 140px;
+}
+
+.counters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: -60px;
+  position: relative;
+}
+
+.counter-box {
+  flex: 1;
+  margin: 0 10px;
+
+  padding: 10px;
+  text-align: left;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+}
+
+.counter-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 5px 0 0 5px;
+}
+
+.counter-box p {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.section-one h3 {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.chart-container {
+  width: 50%;
+
+  padding: 20px;
+  margin: 0 auto; 
+}
+
+
+
+
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+  .dashboard {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .counters {
+   
+    margin-top: 80px;
+    gap: 10px;
+    margin-left: 50vh;
+  }
+
+  .counter-box {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .chart-container {
+    width: 100%; /* Full width for mobile */
+    max-width: 900px; /* Limit maximum width */
+    margin-right: 5px;
+    
+   
+  }
+
+  .section-one h3 {
+    text-align: center;
+    margin-left: 0;
+  }
+}
